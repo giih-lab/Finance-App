@@ -1,0 +1,149 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  min-height: 100vh;
+  background: #f5f7fa;
+  overflow: hidden; /* evita barra de rolagem vertical */
+}
+
+/* --- LADO ESQUERDO --- */
+.login-left {
+  flex: 1.2;
+  padding: 24px 90px 05px;  /* menos padding em cima e embaixo */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* logo */
+.login-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 28px; /* era 40px */
+}
+
+.login-logo-icon {
+  font-size: 24px;
+}
+
+.login-logo-text {
+  font-size: 20px;
+}
+
+/* título e texto */
+.login-title-box h1 {
+  font-size: 32px;       /* era 36px */
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 6px;    /* era 10px */
+}
+
+.login-title-box p {
+  font-size: 15px;
+  max-width: 360px;
+  color: #4b5563;
+  margin-bottom: 4px;    /* encosta mais na imagem */
+}
+
+/* imagem */
+.login-image {
+  width: 100%;           /* mais larga */
+  max-width: 420px;     /* pode ajustar se quiser ainda maior */
+  max-height: 350px;    /* garante que caiba sem cortar */
+  margin-top: 16px;     /* menos espaço entre texto e imagem */
+  border-radius: 12px;
+  object-fit: contain;
+  display: block;
+}
+
+/* --- LADO DIREITO --- */
+.login-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+}
+
+.login-card {
+  width: 380px;
+  padding: 24px 28px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* link esqueci senha */
+.login-forgot {
+  font-size: 13px;
+  color: #008cff;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+/* botão principal */
+.login-button {
+  margin-top: 16px;
+  background-color: #008cff !important; /* azul */
+  border-color: #008cff !important;
+}
+
+/* Divisor */
+.login-divider {
+  text-align: center;
+  margin: 28px 0;
+  font-size: 12px;
+  color: #aaa;
+  position: relative;
+}
+
+.login-divider span {
+  background: #fff;
+  padding: 0 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.login-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #ddd;
+}
+
+/* Registrar link */
+.login-register {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-register a {
+  color: #008cff;
+  font-weight: 500;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .login-left {
+    display: none;
+  }
+
+  .login-right {
+    flex: 1;
+    padding: 24px;
+  }
+
+  .login-card {
+    width: 100%;
+    max-width: 420px;
+  }
+}

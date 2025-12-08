@@ -1,0 +1,71 @@
+/* Fundo igual ao print */
+.tx-page {
+  width: 100%;
+  min-height: 100%;
+  padding: 16px 0 32px;
+  background: #f5f7fa; /* cinza bem claro */
+}
+
+/* Card grande centralizado */
+.tx-card {
+  border-radius: 18px !important;
+  box-shadow: 0 16px 45px rgba(15, 23, 42, 0.08) !important;
+  border: none !important;
+}
+
+/* Toggle Despesa / Receita igual ao layout */
+.tx-type-toggle {
+  display: flex;
+  width: 100%;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+}
+
+.tx-toggle-btn {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.tx-toggle-btn.left {
+  border-right: 1px solid #e5e7eb;
+}
+
+.tx-toggle-btn.right {
+  border-left: 1px solid #e5e7eb;
+}
+
+/* estados inativos (cinza) */
+.tx-toggle-btn.inactive {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+/* Despesa ativa – vermelho */
+.tx-toggle-btn.active-expense {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+/* Receita ativa – verde */
+.tx-toggle-btn.active-income {
+  background: #22c55e;
+  color: #ffffff;
+}
+
+/* bordas arredondadas extremas */
+.tx-toggle-btn.left {
+  border-radius: 999px 0 0 999px;
+}
+
+.tx-toggle-btn.right {
+  border-radius: 0 999px 999px 0;
+}

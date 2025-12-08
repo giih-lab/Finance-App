@@ -1,0 +1,120 @@
+.accounts-page {
+  width: 100%;
+  min-height: 100%;
+  padding: 16px 0 32px;
+  background: #f5f7fa; /* cinza claro do fundo */
+}
+
+/* cards de resumo do topo */
+.acc-summary-card {
+  border-radius: 16px !important;
+  border: none !important;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08) !important;
+}
+
+.acc-summary-value {
+  margin-top: 4px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.acc-summary-change {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.acc-summary-change.positive {
+  color: #16a34a;
+}
+
+.acc-summary-change.negative {
+  color: #dc2626;
+}
+
+/* seções (Contas Bancárias, etc.) */
+.acc-section {
+  margin-bottom: 24px;
+}
+
+.acc-section-title {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111827;
+}
+
+/* card com lista de contas */
+.acc-section-card {
+  border-radius: 16px !important;
+  border: none !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06) !important;
+}
+
+/* cada linha de conta */
+.acc-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 8px;
+}
+
+.acc-row-border {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.acc-row-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.acc-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #111827;
+  font-size: 16px;
+}
+
+.acc-avatar-dark {
+  background: #111827;
+  color: #f9fafb;
+}
+
+.acc-avatar-green {
+  background: #22c55e;
+  color: #f9fafb;
+}
+
+.acc-row-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #111827;
+}
+
+.acc-row-sub {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.acc-row-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.acc-row-amount {
+  font-weight: 600;
+  font-size: 14px;
+  color: #111827;
+}
+
+
